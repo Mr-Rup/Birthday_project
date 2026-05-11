@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="theme-color" content="#000000" />
+
+    <title>MIU</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <audio id="bgm" loop>
+      <source src="ambient.mp3" type="audio/mpeg" />
+    </audio>
+
+    <div id="noise"></div>
+
+    <div class="fog"></div>
+
+    <div class="background-glow"></div>
+
+    <div class="particles">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="container">
+      <div id="intro-screen" class="screen active">
+        <div class="terminal">
+          <p class="line">recovering archived experiment...</p>
+
+          <p class="line delay1">subject_id: MIU</p>
+
+          <p class="line delay2">status: emotionally hazardous</p>
+
+          <p class="line delay3">access requested by: RATS</p>
+
+          <button id="startBtn">tap to access archive</button>
+        </div>
+      </div>
+
+      <div id="story-screen" class="screen">
+        <div id="story-box"></div>
+
+        <button id="nextBtn">continue</button>
+      </div>
+
+      <div id="ending-screen" class="screen">
+        <div class="ending-box">
+          <p class="ending-text">despite prolonged distance, bond integrity remains strangely intact.</p>
+
+          <p class="ending-text delay-final">happy birthday, miu.</p>
+
+          <p class="ending-text final-main">still my favorite failed experiment.</p>
+
+          <button id="restartBtn">rerun experiment?</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="secret"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
